@@ -1,7 +1,18 @@
 # Olist Data Analysis
 ### 1. Exploratory Data Analysis
-### 2. Customer Analysis (cohort analysis / RFM model / KMeans clustering)
-### 3. Machine Learning models (time to delivery estimation, freight value estimation, rating prediction, TBU)
+* Order
+* Sale
+* Product category
+* Payment
+* Rating
+### 2. Customer Analysis
+* Cohort Analysis
+* RFM modelling
+* K-Means clustering
+### 3. Machine Learning models (TBU)
+* Time to delivery estimation
+* Freight value estimation
+* Rating prediction
 ### 4. Recommendation systems (TBU)
 
 ---
