@@ -1,13 +1,14 @@
-# Olist Data Analysis: RFM Modeling, Customer Segmentation & Upselling, Targeted Recommendations
-
-Link for referece (if applicable)
+# Olist Data Analysis: 
+### 1. Exploratory Data Analysis
+### 2. Customer Analysis (cohort analysis / RFM model / KMeans clustering)
+### 3. Machine Learning models (time to delivery estimation, freight value estimation, rating prediction, TBU)
+### 4. Recommendation systems (TBU)
 
 ---
 ## Approach
 
 1. We started with EDA and Trend Analysis of Products and Customers to get insights for a business Analyst. 
 2. Then we Segmented customers into specific clusters based on Cohort Analysis, RFM Modeling using their purchasing behavior. Measure MOCP/MICP (Marketing Influenced Customer Percentage)
-3. Then we used uplift/persuasion modeling to identify which customer needs treatment and identify Upselling & Cross Selling Opportunities
 4. Predict Customer Lifetime value (LTV)
 5. Personalized Recommendations using Implicit feedback in the form of customer’s past purchases and Explicit feedback in the form of their Product Reviews. We have used Alternative Least Squares(ALS) and Doc2Vec for creating 2 different control groups to which Recommendations will be provided. A new user will see the popular recommendations, and using Segmentation, we will identify who are Big Spenders and will Upsell them using Highest rated product recommendations. 
 6. We have created 3 different personas for front end and presented the outcomes as a Marketing dashboard as well as a fully deployed Webapp.
@@ -48,26 +49,4 @@ Poorest performers of our RFM model. They might have gone with our competitors f
 
 Image
 
-## Recommendation Systems  
-
-Recommender systems are algorithms aimed at suggesting relevant items to users (items being movies to watch, text to read, products to buy or anything else depending on industries).
-
-Recommender systems are really critical in some industries as they can generate a huge amount of income when they are efficient or also be a way to stand out significantly from competitors. As a proof of the importance of recommender systems, we can mention that, a few years ago, Netflix organised a challenge (the "Netflix prize") where the goal was to produce a recommender system that performs better than its own algorithm with a prize of 1 million dollars to win.
-
-Image
-
-We will be using below approach to Recommend products - 
- 
-1. Recommendation for Potential Loyalists and Other - 
-ALS (Alternating Least Squares) is an implicit recommendation algorithm to make a recommendation of products and product categories to the users. ALS is an iterative optimization process where for every iteration it tries to arrive closer and closer to a factorized representation of the original data.
-
-2. Recommendation for Loyal Customers who buys Products Frequently and Recently -
-Customer2Vec is a good method for these kinds of users. As these customers usually repeat their orders and buys frequently. We learn a semantic representation for Customers using their previous purchase history.
-
-We learn good semantic representations for customers (users) from transactional data using doc2vec. Each customer is a document, orders are sentences, and products are words. We also compare Customer2Vec with the baseline
-
-3. For Big Spenders - 
-We use Upselling to recommend products to Big Spenders and VVIP customers using Highest Rated and High end prodcuts. 
-
-4. For new Customers - 
-We show Popular Products by current month for new customers. 
+## Recommendation Systems (TBU)
