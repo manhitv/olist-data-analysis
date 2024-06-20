@@ -9,11 +9,12 @@
 * Cohort Analysis
 * RFM modelling
 * K-Means clustering
-### 3. Machine Learning models (TBU)
+### 3. Machine Learning models
 * Time to delivery estimation
 * Freight value estimation
-* Rating prediction
-### 4. Recommendation systems (TBU)
+### 4. Recommendation systems
+* New customers
+* Repeat customers
 
 ---
 ## Approach
@@ -21,8 +22,8 @@
 - Starting with EDA to learn about Trend of Orders, Sales, Products and Customers to get general insights. 
 - I then segmented customers into specific clusters based on Cohort Analysis, RFM Modeling (and also K-Means clustering) using their purchasing behavior.
 - Descriptive analysis results were summarized in a [Marketing dashboard](https://lookerstudio.google.com/reporting/b864d7af-63a1-4050-9036-42897371510d).
-- Doing some predictive analysis via applying Machine Learning to improve delivery time estimation, predict freight and rating of each order.
-- Personalized Recommendations (TBU)
+- Doing some predictive analysis via applying Machine Learning to improve delivery time estimation and predict freight value of each order.
+- Personalized Recommendations
 
 ## Customer Segmentation and RFM Modeling 
 
@@ -40,6 +41,6 @@ Using RFM anaylsis and K-means Clustering, we created the below Clusters or segm
 
 ![customer segments](https://github.com/manhitv/olist-data-analysis/blob/master/notebooks/images/customer_segments.PNG)
 
-## Machine Learning models (TBU)
-
-## Recommendation Systems (TBU)
+## Personalized Recommendations
+* For new customers: products will be recommended based on Popularity by Month (and/or by Location) or based on Highly Rated Categories
+* For repeat customers: we will investigate multiple approaches to create an effective recommender system. These approaches will be evaluated by `top-K-accuracy` score.
